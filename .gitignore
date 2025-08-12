@@ -1,0 +1,7 @@
+/logs/*
+debug
+/dist/
+/logos/download/*
+__debug*.exe
+*.syso
+.env

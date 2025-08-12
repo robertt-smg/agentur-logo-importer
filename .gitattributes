@@ -1,0 +1,11 @@
+*secret* filter=git-crypt diff=git-crypt
+*.pem filter=git-crypt diff=git-crypt
+*.pem* filter=git-crypt diff=git-crypt
+ssl/cert/live/test.la-cuna.icu/*.pem  !filter !diff
+*.key filter=git-crypt diff=git-crypt
+*.key* filter=git-crypt diff=git-crypt
+.gitattributes !filter !diff
+README.md !filter !diff
+
+
+*  -crlf
