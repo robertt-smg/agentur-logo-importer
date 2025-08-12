@@ -1,7 +1,7 @@
 OUT := agentur-logo-importer.exe
-PKG := github.com/agentur-logo-importer
+PKG := .
 # This is not run initially.
-PFX_PWD:=$(shell eval d:/dev/tools/keepass.exe -key sectigoKey.pfx)
+#PFX_PWD:=$(shell eval d:/dev/tools/keepass.exe -key sectigoKey.pfx)
 PKG_LIST := main
 
 
@@ -65,6 +65,7 @@ run: server
 
 dist: server 
 	@echo Packaging Binaries...
+	@rm -f __debug*.exe
 	@mkdir -p ./dist
 	@cp -R *.exe ./dist
 	@rm -f ./dist/app.ini
