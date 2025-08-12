@@ -4,4 +4,4 @@ debug
 /logos/download/*
 __debug*.exe
 *.syso
-.env
+.env*
